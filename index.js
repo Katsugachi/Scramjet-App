@@ -48,8 +48,8 @@ form.addEventListener("submit", async (event) => {
 	const url = search(address.value, searchEngine.value);
 
 	let wispUrl = "wss://scramjet-backend-d0t8.onrender.com/wisp/";
-	if ((await connection.getTransport()) !== "/libcurl/index.mjs") {
-		await connection.setTransport("/libcurl/index.mjs", [
+	if ((await connection.getTransport()) !== "/Scramjet-App/libcurl/index.mjs") {
+		await connection.setTransport("/Scramjet-App/libcurl/index.mjs", [
 			{ websocket: wispUrl },
 		]);
 	}
