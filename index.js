@@ -24,15 +24,15 @@ const { ScramjetController } = $scramjetLoadController();
 
 const scramjet = new ScramjetController({
 	files: {
-		wasm: "/scram/scramjet.wasm.wasm",
-		all: "/scram/scramjet.all.js",
-		sync: "/scram/scramjet.sync.js",
+		wasm: "/Scramjet-App/scram/scramjet.wasm.wasm",
+		all: "/Scramjet-App/scram/scramjet.all.js",
+		sync: "/Scramjet-App/scram/scramjet.sync.js",
 	},
 });
 
 scramjet.init();
 
-const connection = new BareMux.BareMuxConnection("/baremux/worker.js");
+const connection = new BareMux.BareMuxConnection("/Scramjet-App/baremux/worker.js");
 
 form.addEventListener("submit", async (event) => {
 	event.preventDefault();
